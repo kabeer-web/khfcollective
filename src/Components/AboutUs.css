@@ -1,0 +1,143 @@
+.about-us-container {
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(230,240,250,1));
+  color: #000;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0; /* More padding for a clean layout */
+}
+
+.about-us-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./images/background-wave.svg') no-repeat bottom;
+  background-size: cover;
+  z-index: -1;
+  animation: moveWave 10s linear infinite; /* Animate background */
+}
+
+@keyframes moveWave {
+  0% { background-position: 0 0; }
+  100% { background-position: -200px 0; }
+}
+
+.intro-text {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 30px;
+  animation: fadeInUp 1.2s ease-out;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  margin-bottom: 40px;
+  color: #0047ab;
+  animation: slideInDown 1.2s ease-out;
+}
+
+.carousel-container {
+  margin-top: 70px;
+}
+
+.team-card {
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+}
+
+.team-card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.team-card .card-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #007acc;
+  animation: fadeIn 1.3s ease-out;
+  transition: color 0.3s ease;
+}
+
+.card-title svg {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-title:hover svg {
+  transform: rotate(20deg);
+}
+
+.card-text {
+  font-size: 1.4rem;
+  color: #555;
+  margin-top: 15px;
+  animation: fadeIn 1.4s ease-out;
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.badge svg {
+  vertical-align: middle;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.badge:hover svg {
+  transform: scale(1.2);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

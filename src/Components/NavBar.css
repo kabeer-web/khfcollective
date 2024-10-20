@@ -1,0 +1,109 @@
+/* Navbar Container */
+.navbar {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease;
+}
+
+/* Sticky Navbar */
+.sticky-top {
+    background-color: #ffffff; /* Keep white on scroll */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on scroll */
+}
+
+/* Navbar Links */
+.nav-link {
+    color: #333; /* Dark text */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #ff9900; /* Orange text on hover */
+}
+
+/* Dropdown */
+.dropdown-toggle {
+    color: #333 !important; /* Dark text */
+    background-color: #ffffff !important; /* White background */
+    border: none !important; /* No border */
+    padding: 10px 15px;
+}
+
+.dropdown-menu {
+    background-color: #ffffff !important; /* White dropdown background */
+    border: none; /* No border */
+}
+
+.user-dropdown-menu {
+    border-radius: 0; /* Remove border radius */
+}
+
+.user-dropdown-item {
+    color: #333 !important; /* Dark text */
+}
+
+.user-dropdown-item:hover {
+    background-color: #f8f8f8; /* Light gray on hover */
+}
+
+/* Button */
+.btn-outline-dark {
+    border-color: #333; /* Dark border */
+    color: #333; /* Dark text */
+}
+
+.btn-outline-dark:hover {
+    background-color: #333; /* Dark background on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Cart Icon */
+.cart-icon {
+    color: #333; /* Dark text */
+    position: relative;
+}
+
+.cart-icon .badge {
+    background-color: #ff1c08; /* Bright badge color for cart */
+    color: #fff; /* White text */
+}
+
+/* Search Bar */
+.form-control {
+    background-color: #f9f9f9; /* Light input background */
+    color: #333; /* Dark text */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #ff9900; /* Orange border on focus */
+}
+
+/* Navbar Toggle Button */
+.custom-toggler {
+    border: none;
+    background: #ffffff; /* White background */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-toggler:hover {
+    background: #f2f2f2; /* Gray on hover */
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.custom-toggler-icon {
+    color: #333; /* Dark icon color */
+    font-size: 22px;
+}
+
+/* Active Links */
+.nav-link.active {
+    color: #ff9900 !important; /* Highlight active link */
+    font-weight: bold;
+}
