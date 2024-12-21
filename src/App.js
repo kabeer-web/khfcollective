@@ -72,7 +72,7 @@ const App = () => {
       <div className="app-container">
         {/* Exclusive Offer Banner */}
         <div style={{ backgroundColor: '#FFD700', color: '#000', padding: '10px 0', textAlign: 'center', fontWeight: 'bold', fontSize: '1rem', position: 'fixed', top: '0', width: '100%', zIndex: '1000' }}>
-          🎉 Exclusive Opening Offer: 50% OFF on All T-shirts! Valid from Sep 20 to Sep 30 🎉
+          🎉 Exclusive Opening Offer: 50% OFF on All T-shirts! Valid from 1 dec to 30 🎉
         </div>
 
         <div className="main-content" style={{ paddingTop: '50px' }}>
