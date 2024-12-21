@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Modal, Button } from 'react-bootstrap';
 import { FaStar } from 'react-icons/fa'; // Star icons for the rating
 import NavBar from './Components/Navbar';
+import { Helmet } from 'react-helmet';
 import Home from './Components/Home';
 import About from './Components/About';
 import Login from './Components/Login';
@@ -67,6 +68,7 @@ const App = () => {
 
   return (
     <Router>
+      <Helmet>
       <div className="app-container">
         {/* Exclusive Offer Banner */}
         <div style={{ backgroundColor: '#FFD700', color: '#000', padding: '10px 0', textAlign: 'center', fontWeight: 'bold', fontSize: '1rem', position: 'fixed', top: '0', width: '100%', zIndex: '1000' }}>
@@ -136,6 +138,7 @@ const App = () => {
          
         </div>
       </div>
+     </Helmet>
     </Router>
   );
 };
